@@ -19,8 +19,8 @@ const validaciones = {
 
     ,fechaNac:
     { 
-        regex:/^((19|20)?[0-9]{2}[/.](0?[1-9]|1[012])[/.](0?[1-9]|[12][0-9]|3[01]))*$/i
-        ,mensaje:"Formato DD/MM/AAAA."
+        regex: /^(0?[1-9]|[12][0-9]|3[01])[/.](0?[1-9]|1[0-2])[/.]((19|20)[0-9]{2})$/i
+        ,mensaje: "Formato DD/MM/AAAA."
     }
 
     ,codPostal:
@@ -31,8 +31,8 @@ const validaciones = {
 
     ,email:
     { 
-        regex:/^([a-z0-9_\.-]+)@([a-z0-9_\.-])\.([a-z\.]{2,6})$/i        
-        ,mensaje:"Email válido requerido."
+        regex: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i
+        ,mensaje: "Email válido requerido."
     }
 
     ,telFijo:
@@ -157,6 +157,7 @@ document.querySelector("button[type='button']").addEventListener("click", () => 
     const valor = datos[campo] || "";
     input.value = valor;
 
+
     // Validar al recuperar
     if (!validaciones[campo]) return;
 
@@ -177,3 +178,6 @@ document.querySelector("button[type='button']").addEventListener("click", () => 
 
 
 
+// DATOS DE PRUEBA
+
+//ES9121000418450200051332
