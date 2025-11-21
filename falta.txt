@@ -65,3 +65,8 @@ background: #ccc;
 left: 600px;
 
 eso es para crear una ventana en html xd - DSW -
+
+
+
+NO ME VALIDA REPCONTRAEÑA
+NI EL NOMBRE
