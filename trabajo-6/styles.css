@@ -23,7 +23,7 @@ form {
 fieldset {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
   border: none;
   padding: 0;
