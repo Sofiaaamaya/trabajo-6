@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro - Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Tienda Online</h1>
+
+  <!-- Formulario de registro -->
+  <form id="registroForm" novalidate>
+    <fieldset>
+      <legend>Registro de usuario</legend>
+
+      <!-- Columna izquierda -->
+      <div class="lateral-izq">
+        <label for="nombreUser">Nombre:</label>
+        <input type="text" id="nombreUser" name="nombre" placeholder="Pepe..." autocomplete="given-name">
+        <p class="mensaje-error">Debe comenzar en mayúscula.</p>
+
+        <label for="apellidosUser">Apellidos:</label>
+        <input type="text" id="apellidosUser" name="apellidos" placeholder="García López..." autocomplete="family-name">
+        <p class="mensaje-error">Máximo dos apellidos, ambos con mayúscula inicial.</p>
+
+        <label for="dniUser">DNI/NIE:</label>
+        <input type="text" id="dniUser" name="dni" placeholder="12345678X..." autocomplete="off">
+        <p class="mensaje-error">Formato válido: 12345678X o X1234567L.</p>
+
+        <label for="fechaNacUser">Fecha de nacimiento:</label>
+        <input type="text" id="fechaNacUser" name="fechaNac" placeholder="DD/MM/AAAA..." autocomplete="bday">
+        <p class="mensaje-error">Formato DD/MM/AAAA.</p>
+
+        <label for="codPostalUser">Código Postal:</label>
+        <input type="text" id="codPostalUser" name="codPostal" placeholder="12345..." autocomplete="postal-code">
+        <p class="mensaje-error">Código Postal español válido.</p>
+
+        <label for="emailUser">Email:</label>
+        <input type="text" id="emailUser" name="email" placeholder="ejemplo@gmail.com" autocomplete="email">
+        <p class="mensaje-error">Email válido requerido.</p>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="lateral-der">
+        <label for="telFijoUser">Teléfono Fijo:</label>
+        <input type="text" id="telFijoUser" name="telFijo" placeholder="912345678..." autocomplete="tel">
+        <p class="mensaje-error">Debe comenzar con 9 y tener 9 dígitos.</p>
+
+        <label for="telMovilUser">Teléfono Móvil:</label>
+        <input type="text" id="telMovilUser" name="telMovil" placeholder="612345678..." autocomplete="tel-national">
+        <p class="mensaje-error">Debe comenzar con 6 o 7 y tener 9 dígitos.</p>
+
+        <label for="ibanUser">IBAN:</label>
+        <input type="text" id="ibanUser" name="iban" placeholder="ES1234567890123456789012..." autocomplete="off">
+        <p class="mensaje-error">IBAN español válido.</p>
+
+        <label for="tarjetaCreditoUser">Tarjeta de Crédito:</label>
+        <input type="text" id="tarjetaCreditoUser" name="tarjetaCredito" placeholder="4444-4444-4444-4444" autocomplete="cc-number">
+        <p class="mensaje-error">Formato: 4444-4444-4444-4444.</p>
+
+        <label for="contraseñaUser">Contraseña:</label>
+        <input type="password" id="contraseñaUser" name="contrasenha" autocomplete="new-password">
+        <p class="mensaje-error">12+ caracteres con letras, números y símbolo.</p>
+
+        <label for="contraseñaRepUser">Repetir Contraseña:</label>
+        <input type="password" id="contraseñaRepUser" name="repetirContrasenha" autocomplete="new-password">
+        <p class="mensaje-error">Las contraseñas deben coincidir.</p>
+      </div>
+
+      <!-- Botones -->
+      <button id="obtener-JSON" type="button">Obtener - JSON</button>
+      <button id="publicar-PHP" type="button">Publicar - PHP</button>
+      <button id="obtener-PHP" type="button">Obtener - PHP</button>
+      <button id="publicar-BBDD" type="button">Publicar - BBDD</button>
+      <button id="obtener-BBDD" type="submit">Obtener - BBDD</button>
+    </fieldset>
+  </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
