@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+  margin: 5%;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  border: none;
+  padding: 0;
+}
+
+.lateral-izq, .lateral-der {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  border-radius: 10px;
+  height: 35px;
+  border: 2px solid #ccc;
+  outline: none;
+  padding: 0 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Estados de validación */
+input.valido {
+  border-color: green;
+}
+
+input.invalido {
+  border-color: red;
+}
+
+/* Mensajes de error */
+.mensaje-error {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: red;
+  transition: all 0.3s ease;
+}
+
+input.invalido + .mensaje-error {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Botones */
+button {
+  padding: 10px 20px;
+  margin: 20px 10px 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+fieldset > button {
+  align-self: center;
+}
