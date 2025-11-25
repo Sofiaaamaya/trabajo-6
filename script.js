@@ -16,7 +16,7 @@ const patterns = {
 // Declara la constante 'inputs' que contendrá la colección de inputs del formulario.
 const inputs = document.querySelectorAll('input');
 
-// Añado el evento keyup y blur a cada input para validar en tiempo real.
+// Añado el evento keyup a cada input para validar en tiempo real.
 inputs.forEach((input) => {
   input.addEventListener('keyup', (e) => {
     validate(e.target, patterns[e.target.name]);
@@ -85,3 +85,9 @@ document.querySelector("button[type='button']").addEventListener("click", () => 
 
 // DATOS DE PRUEBA
 //ES9121000418450200051332
+
+
+///////////////////////////////////////////////////////////////////////////
+
+
+
