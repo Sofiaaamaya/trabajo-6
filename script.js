@@ -86,6 +86,34 @@ document.querySelector("button[type='button']").addEventListener("click", () => 
 // DATOS DE PRUEBA
 //ES9121000418450200051332
 
+obj = {
+  name : "Pepe",
+  surname : "Lopez Perez",
+  dni : "12345678X" ,
+  date: "22/09/2000",
+  cp: "35500",
+  mail : "pepe@gmail.com",
+  phone :"928666666",
+  mobile : "666999666",
+  card: "4539955085883327",
+  iban : "ES7921000813610123456789",
+  password : "Pepe123456789*"
+};
+
+
+//Send object to server using POST method
+dbParam = JSON.stringify(obj);
+xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    console.log(this.responseText);
+    myObj = JSON.parse(this.responseText);
+   document.getElementById("users").innerHTML = myObj.name+ " was stored correctly";
+    }
+};
+xmlhttp.open("POST", "procesar.php", true);
+xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xmlhttp.send("x=" + dbParam);
 
 ///////////////////////////////////////////////////////////////////////////
 
