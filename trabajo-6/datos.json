@@ -1,0 +1,14 @@
+{
+  "nombre": "Pepe",
+  "apellidos": "López Pérez",
+  "dni": "12345678X",
+  "fechaNac": "22/09/2000",
+  "codPostal": "35500",
+  "email": "pepe@gmail.com",
+  "telFijo": "928666666",
+  "telMovil": "666999666",
+  "tarjetaCredito": "4539955085883327",
+  "iban": "ES7921000813610123456789",
+  "contrasenha": "Pepe1234567890",
+  "repetirContrasenha": "Pepe1234567890"
+}

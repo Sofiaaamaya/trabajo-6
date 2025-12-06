@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Formulario de Registro - Tienda Online</title>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <h1>Tienda Online</h1>
@@ -69,15 +69,19 @@
       </div>
 
       <!-- Botones -->
-      <button id="obtener-JSON" type="button">Obtener - JSON</button>
-      <button id="publicar-PHP" type="button">Publicar - PHP</button>
-      <button id="obtener-PHP" type="button">Obtener - PHP</button>
-      <button id="publicar-BBDD" type="button">Publicar - BBDD</button>
-      <button id="obtener-BBDD" type="submit">Obtener - BBDD</button>
+      <div class="botones-wrap">
+        <button id="obtener-JSON" type="button">Obtener - JSON</button>
+        <button id="publicar-PHP" type="button">Publicar - PHP</button>
+        <button id="obtener-PHP" type="button">Obtener - PHP</button>
+        <button id="publicar-BBDD" type="button">Publicar - BBDD</button>
+        <button id="obtener-BBDD" type="submit">Obtener - BBDD</button>
+      </div>
     </fieldset>
   </form>
 
-    <script src="script.js"></script>
+  <!-- Mensajes al usuario -->
+  <div id="mensajes"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-

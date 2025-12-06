@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* styles.css (basado en lo tuyo) */
 body {
   margin: 5%;
   font-family: sans-serif;
@@ -51,7 +51,6 @@ input {
   transition: border-color 0.3s ease;
 }
 
-/* Estados de validación */
 input.valido {
   border-color: green;
 }
@@ -60,7 +59,6 @@ input.invalido {
   border-color: red;
 }
 
-/* Mensajes de error */
 .mensaje-error {
   opacity: 0;
   height: 0;
@@ -76,10 +74,18 @@ input.invalido + .mensaje-error {
   margin-bottom: 10px;
 }
 
-/* Botones */
+.botones-wrap {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 button {
   padding: 10px 20px;
-  margin: 20px 10px 0;
+  margin: 0;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
@@ -93,6 +99,14 @@ button:hover {
   background-color: #0056b3;
 }
 
-fieldset > button {
-  align-self: center;
+/* Mensajes DOM */
+#mensajes {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #f1f1f1;
+  color: #333;
+  min-height: 40px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
 }
